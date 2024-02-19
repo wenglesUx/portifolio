@@ -1,0 +1,148 @@
+@media (max-width:768px){
+    .navbar-nav button{
+        display: block;
+    }    
+    .navbar-nav ul{
+      
+        flex-direction: column;
+        gap: 2rem !important;
+        margin-top: 2rem;
+    }
+    .navbar-nav li a{
+      
+      color:var(--dark-color)
+    }
+    
+    .section-sobre{
+      
+        flex-wrap: wrap-reverse;
+    }
+    /* .areaSobre{
+        width: 100%;
+     
+    } */
+    .perfilArea{
+        margin: 0 auto;
+    }
+    .infoTemplates{
+        width:80vw
+    }
+    .sub-abilitys{
+        flex-direction: column;
+        align-items: center;
+    }
+     /* offer */
+     #areaText{
+        padding: 0 10px;
+        width: 100%;
+    
+     }
+     .diviser,
+     .s-divisor{
+        flex-wrap: wrap;
+     }
+     
+
+}
+@media (max-width:425px){
+    .information-card {
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .section-sobre {
+        height:auto !important;
+        flex-direction:column !important;
+    }
+    #header-informationd{
+        height:100px;
+        width:auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 2px 15px !important;
+    }
+    #header-informationd h5{
+        font-size: .6rem;
+    }
+    #header-informationd  h3 {
+        font-size: calc(0.8rem + .6vw);}
+    .areaSobre {
+        height:500px;
+        width:100%;
+    }
+    .about-info{
+        height: 500px;
+    }
+    
+    
+.banner{
+    display:none !important;
+}
+#areaText{
+    width: 100% !important;
+}
+.bannerPage{
+    width:100% !important
+}
+.contact-area{
+    justify-content: none !important;
+}
+.contentArea,
+.contact-area,
+footer{
+    flex-direction: column-reverse;
+}
+#formulario{
+    width:100%;
+    margin-bottom:100px;
+}
+#html{
+justify-self: center !important;
+   
+}
+}
+@keyframes glow {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.0);
+    }
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+ 
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s linear infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
